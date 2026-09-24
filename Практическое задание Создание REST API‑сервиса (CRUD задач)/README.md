@@ -26,29 +26,6 @@ REST API-сервис для управления списком задач (to-
 - In-memory storage (`map[int]Task`)
 - `sync.RWMutex`
 
-## Структура проекта
-
-```text
-.
-├── cmd/
-│   └── server/
-│       └── main.go               # Точка входа приложения
-│
-├── internal/
-│   ├── handlers/
-│   │   ├── tasks.go              # Обработчики задач
-│   │   └── health.go             # Health-check обработчик
-│   │
-│   ├── models/
-│   │   └── task.go               # Модель Task
-│   │
-│   └── storage/
-│       ├── storage.go            # Интерфейс Storage
-│       └── memory.go             # Реализация in-memory хранилища
-│
-├── go.mod
-└── README.md
-```
 
 ## Требования
 
@@ -61,12 +38,6 @@ go version
 ```
 
 ## Установка и запуск
-
-Перейдите в корневую директорию проекта — туда, где расположены `go.mod`, папки `cmd` и `internal`.
-
-```powershell
-cd "D:\project\cursor_project\netology\Практическое задание Создание REST API‑сервиса (CRUD задач)"
-```
 
 Проверьте зависимости:
 
